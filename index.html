@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rheingrün — Garten- und Objektpflege in Bonn</title>
-  <meta name="description" content="Rheingrün übernimmt Gartenpflege, Hausmeisterdienste und Arbeiten rund ums Haus in Bonn und im Rhein-Sieg-Kreis. Feste Termine, schriftliche Angebote, Pflegeverträge im 14-tägigen Turnus.">
+  <meta name="description" content="Rheingrün übernimmt Gartenpflege, Hausmeisterdienste, Arbeiten rund ums Haus sowie Planung und Bau automatischer Bewässerungsanlagen in Bonn und im Rhein-Sieg-Kreis. Feste Termine, schriftliche Angebote, Pflegeverträge im 14-tägigen Turnus.">
   <meta name="author" content="Rheingrün Garten- und Objektpflege">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rheingruen-bonn.com/">
@@ -16,7 +16,7 @@
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Rheingrün">
   <meta property="og:title" content="Rheingrün — Garten- und Objektpflege in Bonn">
-  <meta property="og:description" content="Gartenpflege, Hausmeisterdienste und Arbeiten rund ums Haus in Bonn und im Rhein-Sieg-Kreis.">
+  <meta property="og:description" content="Gartenpflege, Hausmeisterdienste, Arbeiten rund ums Haus und automatische Bewässerungsanlagen in Bonn und im Rhein-Sieg-Kreis.">
   <meta property="og:url" content="https://rheingruen-bonn.com/">
   <meta name="twitter:card" content="summary">
 
@@ -29,7 +29,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Rheingrün Garten- und Objektpflege",
-    "description": "Gartenpflege, Hausmeisterdienste und Arbeiten rund ums Haus in Bonn und im Rhein-Sieg-Kreis.",
+    "description": "Gartenpflege, Hausmeisterdienste, Arbeiten rund ums Haus und automatische Bewässerungsanlagen in Bonn und im Rhein-Sieg-Kreis.",
     "url": "https://rheingruen-bonn.com/",
     "telephone": "+4915150466784",
     "email": "info@rheingruen-bonn.com",
@@ -45,7 +45,8 @@
     "makesOffer": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gartenpflege" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hausmeisterdienste" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Arbeiten rund ums Haus" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Arbeiten rund ums Haus" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Planung und Bau automatischer Bewässerungsanlagen" } }
     ]
   }
   </script>
@@ -238,6 +239,7 @@
   .grid{display:grid;gap:20px}
   .grid--3{grid-template-columns:repeat(3,1fr)}
   .grid--2{grid-template-columns:repeat(2,1fr)}
+  .grid--4{grid-template-columns:repeat(4,1fr)}
   .card{
     background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
     padding:26px;display:flex;flex-direction:column;gap:12px;
@@ -348,7 +350,7 @@
 
   @media (max-width:960px){
     .hero__grid{grid-template-columns:1fr;gap:36px;align-items:start}
-    .grid--3{grid-template-columns:1fr 1fr}
+    .grid--3,.grid--4{grid-template-columns:1fr 1fr}
     .steps{grid-template-columns:1fr 1fr}
     .contact{grid-template-columns:1fr}
     .foot__grid{grid-template-columns:1fr 1fr}
@@ -356,7 +358,7 @@
   @media (max-width:640px){
     body{font-size:17px}
     .section{padding-block:52px}
-    .grid--3,.grid--2,.steps,.row2{grid-template-columns:1fr}
+    .grid--3,.grid--4,.grid--2,.steps,.row2{grid-template-columns:1fr}
     .year{grid-template-columns:repeat(6,1fr)}
     .foot__grid{grid-template-columns:1fr}
     .hero__inner{padding-block:56px 0}
@@ -400,7 +402,7 @@
         <div>
           <p class="eyebrow">Garten- und Objektpflege · Bonn &amp; Rhein-Sieg-Kreis</p>
           <h1 style="margin-top:16px">Gepflegte Grünflächen.<br>Objekte in Ordnung.<br><em>Das ganze Jahr.</em></h1>
-          <p class="hero__sub">Rheingrün übernimmt die Garten- und Objektpflege für Privathaushalte, Vermieter und kleine Wohnanlagen in Bonn und im Rhein-Sieg-Kreis — im festen Turnus oder als Einzelauftrag.</p>
+          <p class="hero__sub">Rheingrün übernimmt die Garten- und Objektpflege für Privathaushalte, Vermieter und kleine Wohnanlagen in Bonn und im Rhein-Sieg-Kreis — dazu Planung und Bau automatischer Bewässerungsanlagen.</p>
           <div class="hero__cta">
             <a class="callbtn" href="tel:+4915150466784">Angebot anfordern</a>
             <button class="btn-ghost" data-page="leistungen">Leistungsübersicht</button>
@@ -431,7 +433,7 @@
     <div class="wrap">
       <p class="eyebrow">Leistungsbereiche</p>
       <h2 class="h-sec" style="margin-top:12px">Ein Ansprechpartner für Garten und Objekt</h2>
-      <div class="grid grid--3" style="margin-top:32px">
+      <div class="grid grid--4" style="margin-top:32px">
         <article class="card">
           <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21c0-7 3-12 9-15-1 8-4 12-9 15Z"/><path d="M11 21c-4-1-7-4-7-8 0-5 4-8 9-8"/></svg></span>
           <h3>Gartenpflege</h3>
@@ -446,6 +448,11 @@
           <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14.7 6.3 3 3"/><path d="M3 21l3.5-1 11-11a2.5 2.5 0 0 0-3.5-3.5l-11 11L3 21Z"/></svg></span>
           <h3>Rund ums Haus</h3>
           <p>Flächenreinigung, Entrümpelung und kleine Instandsetzungen — Arbeiten, für die sich sonst kein Betrieb findet.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7 6.6 8.1a7.6 7.6 0 1 0 10.8 0L12 2.7Z"/></svg></span>
+          <h3>Bewässerungstechnik</h3>
+          <p>Automatische Bewässerungsanlagen — geplant, verlegt und eingestellt. Vom Versenkregner bis zur Tropfleitung im Beet.</p>
         </article>
       </div>
     </div>
@@ -501,9 +508,9 @@
     <div class="wrap">
       <p class="eyebrow">Leistungen</p>
       <h2 class="h-sec" style="margin-top:12px">Was wir für Sie übernehmen</h2>
-      <p class="lead prose" style="margin-top:14px">Drei Leistungsbereiche, die zusammengehören. Sie beauftragen einen Betrieb, haben einen Ansprechpartner und erhalten eine Rechnung.</p>
+      <p class="lead prose" style="margin-top:14px">Vier Leistungsbereiche, die zusammengehören. Sie beauftragen einen Betrieb, haben einen Ansprechpartner und erhalten eine Rechnung.</p>
 
-      <div class="grid grid--3" style="margin-top:38px">
+      <div class="grid grid--4" style="margin-top:38px">
         <article class="card">
           <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21c0-7 3-12 9-15-1 8-4 12-9 15Z"/><path d="M11 21c-4-1-7-4-7-8 0-5 4-8 9-8"/></svg></span>
           <h3>Gartenpflege</h3>
@@ -535,6 +542,18 @@
             <li>Hochdruckreinigung von Terrasse, Einfahrt und Wegen</li>
             <li>Entrümpelung von Keller, Garage und Dachboden</li>
             <li>Kleine Maler- und Ausbesserungsarbeiten</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7 6.6 8.1a7.6 7.6 0 1 0 10.8 0L12 2.7Z"/></svg></span>
+          <h3>Bewässerungstechnik</h3>
+          <ul class="list">
+            <li>Planung nach Fläche, Wasserdruck und Pflanzenbedarf</li>
+            <li>Verlegung von Leitungen und Versenkregnern</li>
+            <li>Tropfbewässerung für Beete und Hecken</li>
+            <li>Steuerung, Sensoren und Zeitprogramme</li>
+            <li>Inbetriebnahme im Frühjahr, Entleerung im Herbst</li>
+            <li>Wartung und Reparatur bestehender Anlagen</li>
           </ul>
         </article>
       </div>
@@ -615,7 +634,7 @@
         <ul class="list" style="gap:16px">
           <li style="color:var(--on-brand)"><strong>Ein Ansprechpartner.</strong> Eine Nummer, ein Einsatzplan — Sie sprechen immer mit jemandem, der Ihr Objekt kennt.</li>
           <li style="color:var(--on-brand)"><strong>Verbindliche Termine.</strong> Jeder Einsatz wird schriftlich bestätigt und zum vereinbarten Zeitpunkt ausgeführt.</li>
-          <li style="color:var(--on-brand)"><strong>Alles aus einer Hand.</strong> Grünpflege, Objektbetreuung und Instandsetzung — ohne Koordination zwischen mehreren Betrieben.</li>
+          <li style="color:var(--on-brand)"><strong>Alles aus einer Hand.</strong> Grünpflege, Objektbetreuung, Bewässerungstechnik und Instandsetzung — ohne Koordination zwischen mehreren Betrieben.</li>
           <li style="color:var(--on-brand)"><strong>Fachgerechte Entsorgung.</strong> Schnittgut und Abfall nehmen wir mit, die Flächen übergeben wir besenrein.</li>
         </ul>
       </div>
@@ -681,6 +700,7 @@
                 <option>Gartenpflege</option>
                 <option>Hausmeisterdienst / Objektbetreuung</option>
                 <option>Rund ums Haus / Kleinreparatur</option>
+                <option>Bewässerungsanlage planen und bauen</option>
                 <option>Entrümpelung</option>
                 <option>Etwas anderes</option>
               </select>
@@ -812,14 +832,14 @@
   var MONATE = [
     ["Januar","Jan", ["Gehölz- und Obstbaumschnitt bei frostfreiem Wetter","Kontrolle von Bäumen, Kronen und Baumstützen nach Sturm","Entrümpelung von Keller, Garage und Dachboden","Kleine Maler- und Ausbesserungsarbeiten im Innenbereich","Rasenflächen ruhen lassen, nicht betreten"]],
     ["Februar","Feb", ["Letzte Möglichkeit für starken Gehölzrückschnitt — nur bis 28. Februar","Auslichtungsschnitt an Sträuchern vor dem Austrieb","Stauden zurückschneiden, Beete vorbereiten","Rasenflächen von Winterschutt und Laubresten räumen","Geräte und Maschinen für die Saison warten"]],
-    ["März","Mär", ["Erste Rasendüngung der Saison","Erster Rasenschnitt bei anhaltend milder Witterung","Hochdruckreinigung von Terrasse, Einfahrt und Wegen","Wildkraut aus Pflasterfugen entfernen","Ab 1. März nur noch schonender Form- und Pflegeschnitt an Hecken"]],
-    ["April","Apr", ["Vertikutieren nach dem zweiten Rasenschnitt","Nachsaat und Ausbesserung kahler Stellen","Beete mulchen, bepflanzen und abgrenzen","Neupflanzung von Bäumen und Sträuchern","Wildkrautbekämpfung auf Wegen und in Beeten"]],
-    ["Mai","Mai", ["Rasenschnitt alle 7 bis 10 Tage","Rasenneuanlage und Rollrasen ab 10 °C Bodentemperatur","Formschnitt an Hecken und Formgehölzen","Bewässerung einrichten und einstellen","Frühjahrsblüher nach der Blüte zurückschneiden"]],
+    ["März","Mär", ["Erste Rasendüngung der Saison","Erster Rasenschnitt bei anhaltend milder Witterung","Bewässerungsanlage in Betrieb nehmen und entlüften","Hochdruckreinigung von Terrasse, Einfahrt und Wegen","Ab 1. März nur noch schonender Form- und Pflegeschnitt an Hecken"]],
+    ["April","Apr", ["Vertikutieren nach dem zweiten Rasenschnitt","Nachsaat und Ausbesserung kahler Stellen","Beete mulchen, bepflanzen und abgrenzen","Bewässerungsanlagen planen und verlegen","Neupflanzung von Bäumen und Sträuchern"]],
+    ["Mai","Mai", ["Rasenschnitt alle 7 bis 10 Tage","Rasenneuanlage und Rollrasen ab 10 °C Bodentemperatur","Formschnitt an Hecken und Formgehölzen","Zeitprogramme der Bewässerung auf die Saison einstellen","Frühjahrsblüher nach der Blüte zurückschneiden"]],
     ["Juni","Jun", ["Sommerdüngung mit kaliumbetontem Dünger","Formschnitt um den Johannistag am 24. Juni","Verblühtes entfernen, Beete pflegen","Bewässerung und Objektbetreuung während der Urlaubszeit","Rasenkanten stechen und Wege freihalten"]],
-    ["Juli","Jul", ["Rasen höher mähen und regelmäßig wässern","Wässern in den Morgenstunden, zwei- bis dreimal wöchentlich","Sträucher nach der Blüte auslichten","Wildkraut in Fugen und Beeten entfernen","Mulchschicht prüfen und ergänzen"]],
+    ["Juli","Jul", ["Rasen höher mähen und regelmäßig wässern","Bewässerung auf Morgenstunden programmieren, zwei- bis dreimal wöchentlich","Regner und Tropfleitungen auf Verstopfung prüfen","Sträucher nach der Blüte auslichten","Wildkraut in Fugen und Beeten entfernen"]],
     ["August","Aug", ["Zweiter Formschnitt an Hecken ab Ende August","Rasennachsaat vorbereiten, Flächen auflockern","Stauden nach der Blüte zurückschneiden","Schnittgut abfahren und entsorgen","Herbstpflanzungen planen und vorbereiten"]],
     ["September","Sep", ["Beste Pflanzzeit für Gehölze, Hecken und Stauden","Rasennachsaat und Regeneration der Fläche","Letzte Düngergabe der Saison, kaliumbetont","Blumenzwiebeln für das Frühjahr setzen","Vertikutieren stark verfilzter Flächen"]],
-    ["Oktober","Okt", ["Laubräumung im wöchentlichen Turnus","Herbstdüngung mit Kalium für die Winterhärte","Ab 1. Oktober wieder starker Gehölz- und Heckenrückschnitt erlaubt","Pflanzen winterfest machen, Außenleitungen entleeren","Rasen ein letztes Mal auf normaler Höhe mähen"]],
+    ["Oktober","Okt", ["Laubräumung im wöchentlichen Turnus","Herbstdüngung mit Kalium für die Winterhärte","Bewässerungsanlage entleeren und frostsicher abstellen","Ab 1. Oktober wieder starker Gehölz- und Heckenrückschnitt erlaubt","Rasen ein letztes Mal auf normaler Höhe mähen"]],
     ["November","Nov", ["Letzter Rasenschnitt vor dem Winter","Laubräumung und fachgerechte Entsorgung","Gehölzschnitt und Auslichten an Bäumen und Sträuchern","Entrümpelung von Keller, Garage und Dachboden","Geräte reinigen und einlagern"]],
     ["Dezember","Dez", ["Baum- und Strauchschnitt bei frostfreiem Wetter","Kontrollgänge nach Sturm, Schneedruck von Gehölzen entfernen","Restlaub von Wegen und Zufahrten räumen","Kleinreparaturen und Streicharbeiten im Innenbereich","Pflegepläne für die kommende Saison abstimmen"]]
   ];
