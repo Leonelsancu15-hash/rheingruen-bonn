@@ -1,13 +1,16 @@
 # Rheingrün — Garten- und Objektpflege Bonn
 
 Website des Betriebs Rheingrün (Johann Beratz, Dennis Frinke-Oedekoven, Leonel Sancu).
-Statische Einzelseite ohne Framework und ohne Build-Schritt.
+Statische Seite ohne Framework und ohne Build-Schritt. Animationen über GSAP,
+ScrollTrigger und Lenis, per CDN eingebunden. Schriften: Fraunces, Instrument Sans,
+JetBrains Mono über Google Fonts.
 
 ## Dateien
 
 | Datei | Zweck |
 |---|---|
 | `index.html` | Die komplette Website — Struktur, Styles und Skript in einer Datei |
+| `impressum.html` | Impressum und Datenschutzhinweise |
 | `404.html` | Fehlerseite |
 | `robots.txt` | Freigabe für Suchmaschinen |
 | `sitemap.xml` | Adresse der Startseite für Suchmaschinen |
@@ -42,14 +45,13 @@ Statische Einzelseite ohne Framework und ohne Build-Schritt.
 
 Alles steht in `index.html`:
 
-- Texte der vier Seiten: im Bereich `<main>`, jeweils in `<section class="page" id="page-...">`
+- Texte: im Bereich `<main>`, jeweils in `<section class="section" id="...">`
 - Farben und Schriften: ganz oben im `<style>`-Block unter `:root`
 - Jahreskalender: unten im `<script>`-Block in der Liste `MONATE`
 - Telefonnummer: nach `tel:+4915150466784` suchen und ersetzen
 
 ## Vor dem Livegang zwingend ergänzen
 
-- [ ] **Impressum** nach § 5 DDG (Pflicht für geschäftliche Websites)
-- [ ] **Datenschutzerklärung** nach DSGVO
+- [ ] Postanschrift und Steuernummer im Impressum ergänzen
 - [ ] E-Mail-Adresse `info@rheingruen-bonn.com` einrichten
 - [ ] Eigene Fotos statt reiner Textdarstellung
