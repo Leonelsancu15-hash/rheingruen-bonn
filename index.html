@@ -1134,16 +1134,17 @@ html.has-motion [data-reveal-item]{visibility:hidden}
 
   /* Hero-Intro */
   if (!reduce) {
+    var heroTitle = document.getElementById("heroTitle");
+    if (heroTitle) splitWords(heroTitle);
+    var heroWords = heroTitle ? heroTitle.querySelectorAll(".motion-word") : [];
+
     gsap.timeline({ delay: .15 })
       .from("#field", { autoAlpha: 0, duration: 1.6, ease: "power2.out" })
       .from(".nav__inner", { y: -20, autoAlpha: 0, duration: .8 }, .2)
       .from("#heroEyebrow", { y: 18, autoAlpha: 0, duration: .8 }, .35)
-      .add(function(){
-        splitWords(document.getElementById("heroTitle"));
-      }, .4)
-      .fromTo("#heroTitle .motion-word",
+      .fromTo(heroWords,
         { yPercent: 112, autoAlpha: 0 },
-        { yPercent: 0, autoAlpha: 1, duration: 1.05, ease: "power4.out", stagger: .055 }, .45)
+        { yPercent: 0, autoAlpha: 1, duration: 1.05, ease: "power4.out", stagger: .055 }, .4)
       .from("#heroLead", { y: 20, autoAlpha: 0, duration: .9 }, .95)
       .from("#heroCta", { y: 20, autoAlpha: 0, duration: .9 }, 1.05)
       .from("#heroFoot", { y: 16, autoAlpha: 0, duration: .9 }, 1.15);
